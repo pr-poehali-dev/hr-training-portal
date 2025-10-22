@@ -24,11 +24,11 @@ const ProgramsSection = ({ courses }: ProgramsSectionProps) => {
   return (
     <section id="programs" className="py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 animate-on-scroll">
           Наши образовательные направления
         </h2>
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <Card className="bg-gradient-to-br from-primary to-blue-600 text-white hover:shadow-2xl transition-all">
+          <Card className="bg-gradient-to-br from-primary to-blue-600 text-white hover:shadow-2xl transition-all animate-on-scroll">
             <CardContent className="p-8">
               <Icon name="Award" className="mb-4" size={56} />
               <h3 className="text-2xl font-bold mb-4">
@@ -48,7 +48,7 @@ const ProgramsSection = ({ courses }: ProgramsSectionProps) => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-br from-accent to-orange-600 text-white hover:shadow-2xl transition-all">
+          <Card className="bg-gradient-to-br from-accent to-orange-600 text-white hover:shadow-2xl transition-all animate-on-scroll animate-on-scroll-delay-1">
             <CardContent className="p-8">
               <Icon name="TrendingUp" className="mb-4" size={56} />
               <h3 className="text-2xl font-bold mb-4">Повышение квалификации</h3>
@@ -67,13 +67,13 @@ const ProgramsSection = ({ courses }: ProgramsSectionProps) => {
           </Card>
         </div>
 
-        <h3 className="text-3xl font-bold text-center mb-8">Курсы повышения квалификации</h3>
+        <h3 className="text-3xl font-bold text-center mb-8 animate-on-scroll">Курсы повышения квалификации</h3>
         <Accordion type="single" collapsible className="max-w-4xl mx-auto space-y-4">
           {courses.map((course, index) => (
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="bg-white border-2 border-primary/20 rounded-lg px-6"
+              className="bg-white border-2 border-primary/20 rounded-lg px-6 animate-on-scroll"
             >
               <AccordionTrigger className="text-left hover:no-underline">
                 <div className="flex items-center gap-4">

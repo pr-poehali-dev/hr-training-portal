@@ -16,10 +16,10 @@ const TestimonialsSection = ({ testimonials }: TestimonialsSectionProps) => {
   return (
     <section id="testimonials" className="py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Отзывы студентов</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 animate-on-scroll">Отзывы студентов</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow">
+            <Card key={index} className="hover:shadow-lg transition-shadow animate-on-scroll">
               <CardContent className="p-6">
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (

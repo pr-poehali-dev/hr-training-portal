@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import WhyUsSection from '@/components/WhyUsSection';
@@ -22,6 +23,8 @@ const Index = () => {
     time: '',
   });
   const { toast } = useToast();
+
+  useScrollAnimation();
 
   useEffect(() => {
     const timer = setTimeout(() => {
